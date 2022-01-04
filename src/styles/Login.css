@@ -1,0 +1,58 @@
+.logIn{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    margin: 2% auto;
+}
+
+.form-control{
+    /* border: 1px grey solid; */
+   padding: 0.5em;
+    align-content: center;
+    
+}
+.login-btn{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #e4737b ;
+    margin: 1em;
+}
+
+.log-form{
+    justify-items: center;
+    border: 1px solid grey;
+    margin: 0 auto;
+   
+    width: 30%;
+   
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    border-radius: 0.5em;
+    background-color: #F5F5F5;
+    padding: 1em;
+}
+.card-footer2 a{
+    padding: 0.5em;
+}
+.input-group-form-group{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+@media screen and (max-width: 700px){
+.form-control{
+width:30%;}
+.log-form{width: 70%;}
+
+
+}
+@media screen and (max-width: 300px){
+    .form-control{
+        width:90%;
+    }
+    .input-group-form-group{
+        width:100%;
+    }
+}

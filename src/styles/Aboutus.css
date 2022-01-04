@@ -1,0 +1,29 @@
+.about-misiion p, .article p{
+    color: black;
+}
+
+.article{
+    margin: 0.5em;
+    grid-area: card1;
+}
+
+.about-image{
+    margin:0.5em;
+    grid-area: card2;
+}
+.about-misiion{
+    margin: 0.5em;
+    grid-area: card3;
+}
+
+.About-section{
+    margin: 1em;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: "card2 card1"
+                          "card3 card3";
+}
+.about-image img{
+    width: 50vw;
+    height:50vh;
+}

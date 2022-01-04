@@ -1,0 +1,43 @@
+.BAkery-body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Bakery-intro{
+    background-image: url("../coffee3.jpeg");
+    background-size: cover;
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+  
+}
+#copoun{
+    color: white;
+}
+
+
+.Bakery-intro h2,p{
+    color: white;
+  
+    padding: 1em; 
+}
+
+.Bakery-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    /* width: 70%; */
+   
+}
+
+.copounp{
+    font-size: 4em;
+    text-align: left;
+}
+@media screen and (max-width: 475px){
+
+    .Bakery-cards{
+       display: flex;
+       flex-direction: column;
+    }
+}

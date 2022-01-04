@@ -1,0 +1,42 @@
+
+
+.Types-item img{
+    width: 100%;
+    height: 50vh;
+   
+}
+.Types-info p{
+    color: black;
+}
+
+.Types-body{
+    padding: 1em;
+    width: 70%;
+    height: 50%;
+    align-content: center;
+    margin-left: 3em;
+    /* background-color: rgb(226, 222, 222); */
+    margin-bottom: 0.5em;
+    background-color:#F5F5F5 ;
+    border-radius: 0.5em;
+}
+.types{
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.bakery-btn{
+    padding: 0.5em;
+    background-color: #e4737b;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    
+}
+.bakery-btn:hover{
+    background-color: #6DBBBF;
+}
+.Types-info h6{
+    font-size: 1em;
+}
+

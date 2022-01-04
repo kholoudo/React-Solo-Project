@@ -1,0 +1,51 @@
+.Doughnuts-cards{
+   display:flex;
+   /* width: 60%; */
+   /* padding: 2em; */
+   border:1px solid grey;
+   margin: 0.5em;
+   background-color:#F5F5F5 ;
+   border-radius: 0.5em;
+   box-shadow: 5px 5px #888888;
+}
+.card-text{
+    color: black;
+    margin: 0.5em;
+}
+
+
+.card-img-top{
+    width:100%;
+    height:70%;
+    padding: 1em;
+    transition: width 3s;
+   
+   
+}
+.card-img-top:hover{
+    width: 100px;
+}
+.card-body h5, p{
+padding:0.5em;
+}
+.btnLanding{
+    margin-top: 0.75em;
+    text-decoration: none;
+    background-color: #6DBBBF;
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+
+  
+}
+.btnLanding:hover{
+    background-color:#FE4F5A ;
+}
+
+@media screen and (max-width: 768px){
+    .Doughnuts-cards{
+      
+        
+        justify-content: center;
+    }
+}

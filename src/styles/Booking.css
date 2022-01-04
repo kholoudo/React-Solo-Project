@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .order-form {
+    background-color: #e9edf2;
+    border-radius: 1em;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  
+  .order-submission{
+   width: 70%;
+    margin: 2em;
+    padding: 2em;
+    justify-items: center;
+  }
+  
+  .contactInput {
+    display: flex;
+    width: 40%;
+    border: 1px solid grey;
+    padding: 0.5em;
+    margin: 2em auto;
+    border-radius: 0.5em;
+  }
+  
+  .orderSubmit {
+    text-align: center;
+    padding: 1em 4em;
+   
+    border-radius: 0.5rem;
+    background-color: #e4737b;
+    color: white;
+    font-weight: bold;
+    
+  }
+  .orderSubmit:hover {
+    background-color: #10ccc3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  .errorMessage1 {
+    color: red;
+  }
+  @media only screen and (max-width: 800px) {
+    .order-form {
+     
+ 
+      width: 100%;
+   
+    }
+    .contactInput{
+      width: 80%;
+    }
+    .orderSubmit{
+     padding: 1em;
+    }
+  }
+ 

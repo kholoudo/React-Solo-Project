@@ -117,3 +117,12 @@
       padding: 1em 0;
     }
   }
+  @media screen and (max-width: 590px) {
+   .contactus-footer p{
+     font-size: 0.75em;
+    padding: 0.5em 0;
+    text-align: left;
+  }
+   }
+
+  

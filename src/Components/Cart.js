@@ -59,16 +59,18 @@ const handleDecrement=(id)=>{
    
     
 }
-const isLogged=()=>{
-if(!JSON.parse(localStorage.getItem('logged_user'))){
-   
-    alert("Kindly to login First");
-    // navigate('/Login');
+// const isLogged=()=>{
+// if(!JSON.parse(localStorage.getItem('logged_user'))){
+//     <Link to='/login'  />
+//     alert("Kindly to login First");
     
-}else{
-    // navigate('/Booking');
-}
-}
+// }
+    
+// else{
+//    <Link to='/Booking'/>; 
+    
+    
+// }}
 
 
 const cartProducts=JSON.parse(localStorage.getItem('cart'));
@@ -110,7 +112,7 @@ const cartProducts=JSON.parse(localStorage.getItem('cart'));
   </div>
             <div className='cart-item-total-price-name'>Total Price
             <div className='cart-item-total-price'> JOD {totalPrice-newPrice}</div>
-            <Link to="/Booking"><button className="deliveryBooking" onClick={isLogged()}> Proceed</button></Link>
+            <Link to="/Booking"><button className="deliveryBooking" > Proceed</button></Link>
             </div>
         </div>
 

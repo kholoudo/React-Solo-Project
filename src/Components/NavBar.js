@@ -34,8 +34,8 @@ function NavBar(props){
           <li>
             {props.logged &&(
               <Link to="/Login">
-                <button
-                  className="item1"
+                <button className="logoutbtn"
+                  className="logbtn"
                   onClick={() => {
                     localStorage.removeItem("logged_user");
                     props.setLogged(false);
@@ -55,28 +55,7 @@ function NavBar(props){
               </Link>
             )}
           </li>
-          {/* {localStorage.getItem("users") ? (
-          <div className="logout" onClick={() => {
-            localStorage.removeItem("users");}}>Logout
-            
-          </div>
-        ) : (
-          <>
-            <Link to="/Register">
-              <div className="item"> Register </div>
-            </Link>
-            <Link to="/Login">
-              <div className="item"> Log In </div>
-            </Link>
-          </>
-        )} */}
-
-
-{/* <li className="item"> <Link to="/Login">Login</Link> </li>
-<li className="item"><Link to="/Register">Register</Link></li> */}
-
-
-
+    
 </ul>
 
 </div>

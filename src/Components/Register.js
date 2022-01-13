@@ -7,7 +7,7 @@ function Register({ setSubmitted, setLogged }) {
   const navigate = useNavigate();
   const [formErrors, setFormErrors] = useState({});
 
-  const [Isvalidate, setIsvalidate] = useState(false);
+ 
 
   const [formGroup, setFormGrroup] = useState({
     firstName: "",

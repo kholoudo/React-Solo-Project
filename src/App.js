@@ -12,10 +12,10 @@ import {useState} from 'react';
 
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Footer from './Components/Footer';
-import {useEffect} from 'react'
+
 
 function App() {
-  const [cartItems,setCartItems]=useState([]);
+  // const [cartItems,setCartItems]=useState([]);
   const[logged,setLogged]=useState(JSON.parse(localStorage.getItem('logged_user')));
  
   return (

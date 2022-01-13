@@ -35,8 +35,11 @@
     text-align: left;
 }
 @media screen and (max-width: 475px){
-
+.copounp{
+    display: none;
+}
     .Bakery-cards{
+        
        display: flex;
        flex-direction: column;
     }

@@ -1,9 +1,14 @@
 import React from 'react';
 import {useState} from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate,Link } from 'react-router-dom';
 import "../styles/Booking.css"
 
 function Booking() {
+  // const navigate=useNavigate();
+  // if(!JSON.parse(localStorage.getItem('logged_user'))){
+  //   navigate('/Login');
+  //   // alert("Kindly to login First");
+  const navigate=useNavigate();
     let obj = { fName: "", lName: "", Email: "" };
 
     let logged = JSON.parse(localStorage.getItem("logged_user"))
@@ -16,23 +21,13 @@ function Booking() {
     const handleChange = (e, attr) => {
       setFormInfo({ ...formInfo, [attr]: e.target.value });
     };
+ 
+
   
-    // //********** Handle Date ********/
-    // let today = new Date();
-    // const start = today.toISOString();
-    // const valueCut1 = start.substring(0, 10);
-    // let [thisDay, setThisDay] = useState(valueCut1);
-  
-    // const handleDateChange = (e) => {
-    //   setThisDay(e.target.value);
-    // };
-    // const handleDelivery=(e)=>{
-    //     e.preventDefault();
-    //     alert("Thank you, Delivery team will contact you soon");
-       
-    // }
-  
+   
     const checkOrders = (e) => {
+
+
       e.preventDefault();
   
       let userInfo = {
@@ -57,9 +52,17 @@ function Booking() {
       } else {
         const orders = [];
         orders.push(userInfo);
-        alert(" Thank you, Delivery team will contact you soon");
-        Navigate('/');
+        
       }
+      if(!JSON.parse(localStorage.getItem('logged_user'))){
+      
+        alert("Kindly to login First");
+        
+    }else
+
+      alert(" Thank you, Delivery team will contact you soon");
+     
+        
     };
   
     return (
@@ -125,8 +128,7 @@ function Booking() {
                 value={formInfo.Date}
                 className="contactInput"
                 type={"date"}
-                // min={valueCut1}
-                // value={thisDay}
+               
                 id="Date"
                 placeholder="Date"
                 required
